@@ -1,0 +1,21 @@
+{
+  "name": "HW3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csv": "^5.5.3",
+    "csv-parser": "^3.0.0",
+    "csvtojson": "^2.0.10",
+    "fast-csv": "^4.3.6",
+    "path": "^0.12.7",
+    "random-words": "^1.1.1",
+    "xlsx": "^0.17.1"
+  }
+}
