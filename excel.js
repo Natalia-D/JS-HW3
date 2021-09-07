@@ -13,12 +13,10 @@ const XLSX = require ('xlsx');
       const file= fs.readFileSync(pathToJson);
       let obj = JSON.parse(file);
       let array = Object.keys(obj)
-
-
              
           
       for (var i = 0; i < array.length; i++) {
-        arrayNew.push([array[0]],obj[array[i]]);
+        arrayNew.push([array[i]],obj[array[i]]);
         
       }
         
@@ -63,24 +61,3 @@ const arrayNew2 = [...arrayNew1];
 
 convertJsonToExcel('./jsonFiles/json1.json', './newFile.xlsx');
 
-/*
-    
-
-for (var j = 0; j < obj[array[i]].length; j++){
-          arrayNew.push(obj[array[i][j]]);
-        }
-     
-
-
-fs.readdir(’./jsonFiles/’, (err, files) => { 
-  files.forEach(file => { 
-    convertJsonToExcel(file, './newFile.xlsx'); 
-  }); 
-})
-
-
-
-
-
-
-*/
